@@ -1,0 +1,33 @@
+stories:
+- story: caminho feliz
+  steps:
+  - intent: saudar
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+- story: caminho triste 1
+  steps:
+  - intent: saudar
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: afirmar
+  - action: utter_happy
+- story: caminho triste 2
+  steps:
+  - intent: saudar
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: negar
+  - action: utter_goodbye
+- story: diga adeus
+  steps:
+  - intent: adeus
+  - action: utter_goodbye
+- story: bot challenge
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
